@@ -10,7 +10,7 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.tdqsxds.mongodb.net
-      MONGODB_USERNAME: vijaysaini83   
+      MONGODB_USERNAME: vijaysaini83
       MONGODB_PASSWORD: Lucky@251001
       PORT: 8080
     runs-on: ubuntu-latest
@@ -36,6 +36,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output information
-        run: |        
+        run: |
           echo "MONGODB_USERNAME: ${{env.MONGODB_USERNAME}}"
           echo "MONGODB_DB_NAME: $MONGODB_DB_NAME"
